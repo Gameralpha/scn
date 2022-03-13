@@ -43,7 +43,6 @@ else:
     API_HASH_KEY = Config.API_HASH
     STRING_SESSION = Config.STRING_SESSION
     MONGO_DB_URL = Config.MONGO_DB_URL
-    Lovely = data["Lovely"]
     ENFORCERS = data["ENFORCERS"]
     INSPECTORS = data["INSPECTORS"]
     Lovely_logs = Config.Lovely_logs
