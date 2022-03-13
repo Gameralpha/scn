@@ -11,16 +11,7 @@
          "Lovely Scanner"
       ],   
    "repository": "https://github.com/Hodacka/LovelyXSystem",
-   "addons": [
-      {
-         "options": {
-            "version": "13"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
-
-
+       "stack": "container",
    "env": {
       "BOT_TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
@@ -89,4 +80,22 @@
       }
       
    }
+          "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "free"
+          }
+      },
+      "stack": "container"
 }
