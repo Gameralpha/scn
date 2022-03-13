@@ -37,7 +37,7 @@ if ENV:
     GBAN_MSG_LOGS = int(os.environ.get("GBAN_MSG_LOGS"))
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
 else:
-    import Lovely_System.config as Config
+    import Lovely_System.config 
  API_ID_KEY = config.API_ID 
  API_HASH_KEY = config.API_HASH 
  STRING_SESSION = config.STRING_SESSION
