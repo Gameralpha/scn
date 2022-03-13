@@ -38,18 +38,17 @@ if ENV:
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
 else:
     import Lovely_System.config as Config
-
-    API_ID_KEY = Config.API_ID
-    API_HASH_KEY = Config.API_HASH
-    STRING_SESSION = Config.STRING_SESSION
-    MONGO_DB_URL = Config.MONGO_DB_URL
-    ENFORCERS = data["ENFORCERS"]
-    INSPECTORS = data["INSPECTORS"]
-    Lovely_logs = Config.Lovely_logs
-    Lovely_approved_logs = Config.Lovely_approved_logs
-    GBAN_MSG_LOGS = Config.GBAN_MSG_LOGS
-    BOT_TOKEN = Config.BOT_TOKEN
-
+ API_ID_KEY = config.API_ID 
+ API_HASH_KEY = config.API_HASH 
+ STRING_SESSION = config.STRING_SESSION
+ MONGO_DB_URL = config.MONGO_DB_URL
+ INSPECTORS = config.INSPECTORS
+ ENFORCERS = config.ENFORCERS
+ Lovely_logs =  config.Lovely_logs
+ Sibyl_approved_logs = config.Sibyl_approved_logs
+ Lovely_approved_logs = Config.Lovely_approved_logs
+GBAN_MSG_LOGS = Config.GBAN_MSG_LOGS
+ BOT_TOKEN = Config.BOT_TOKEN
 INSPECTORS.extend(Lovely)
 ENFORCERS.extend(INSPECTORS)
 
