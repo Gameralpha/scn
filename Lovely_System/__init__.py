@@ -45,12 +45,11 @@ else:
  INSPECTORS = config.INSPECTORS
  ENFORCERS = config.ENFORCERS
  Lovely_logs =  config.Lovely_logs
- Sibyl_approved_logs = config.Sibyl_approved_logs
  Lovely_approved_logs = Config.Lovely_approved_logs
-GBAN_MSG_LOGS = Config.GBAN_MSG_LOGS
+ GBAN_MSG_LOGS = Config.GBAN_MSG_LOGS
  BOT_TOKEN = Config.BOT_TOKEN
-INSPECTORS.extend(Lovely)
-ENFORCERS.extend(INSPECTORS)
+ INSPECTORS.extend(Lovely)
+ ENFORCERS.extend(INSPECTORS)
 
 session = aiohttp.ClientSession()
 
